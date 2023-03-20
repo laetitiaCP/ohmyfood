@@ -1,3 +1,12 @@
 body {
+    margin: 0;
+    width: 100%;
     box-sizing: content-box;
 }
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+

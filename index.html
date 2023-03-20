@@ -9,13 +9,26 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <img src="./images/logo/ohmyfood.png">
+        <img id="logo" src="./images/logo/ohmyfood.png">
     </header>
-    
+    <main class="main-container">
+        <form class="location-form">
+            <label class="location-icon" for="location-search"><i class="fa-sharp fa-solid fa-location-dot"></i></label>
+            <input id="location-search" type="search" value="Paris, Belleville">
+        </form>
+        <section class="explore-menu">
+            <h1>Réservez le menu qui vous convient</h1>
+            <span class="subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</span>
+            <button class="explore-button">Explorez nos restaurants</button>
+        </section>
+    </main>
 </body> 
 </htm
