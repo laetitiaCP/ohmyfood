@@ -16,18 +16,47 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
-        <img id="logo" src="./images/logo/ohmyfood.png">
+        <h1>ohmyfood</h1>
     </header>
+
+    <!-- MAIN -->
     <main class="main-container">
-        <form class="location-form">
-            <label class="location-icon" for="location-search"><i class="fa-sharp fa-solid fa-location-dot"></i></label>
-            <input id="location-search" type="search" value="Paris, Belleville">
+
+        <!-- LOCATION -->
+        <form class="location">
+            <label class="location__icon" for="location-search"><i class="fa-sharp fa-solid fa-location-dot"></i></label>
+            <input class="location__search" id="location-search" type="search" value="Paris, Belleville">
         </form>
-        <section class="explore-menu">
-            <h1>Réservez le menu qui vous convient</h1>
-            <span class="subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</span>
-            <button class="explore-button">Explorez nos restaurants</button>
+
+        <!-- EXPLORE -->
+        <section class="explore">
+            <h2 class="explore__title">Réservez le menu qui vous convient</h2>
+            <h3 class="explore__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
+            <button class="btn-explore">Explorez nos restaurants</button>
+        </section>
+
+        <!-- FUNCTIONNING -->
+        <section class="functionning">
+            <h2>Fonctionnement</h2>
+            <ul class="functionning__liste">
+                <li class="functionning__element">
+                    <span class="functionning__number">1</span>
+                    <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>
+                    <h3 class="functionning__title">Choisissez un restaurant</h3>
+                </li>
+                <li class="functionning__element">
+                    <span class="functionning__number">2</span>
+                    <i class="fa-sharp fa-solid fa-list-ul"></i>
+                    <h3 class="functionning__title">Composez votre menu</h3>
+                </li>
+                <li class="functionning__element">
+                    <span class="functionning__number">3</span>
+                    <i class="fa-sharp fa-solid fa-store"></i>
+                    <h3 class="functionning__title">Dégustez au restaurant</h3>
+                </li>
+            </ul>
         </section>
     </main>
 </body> 

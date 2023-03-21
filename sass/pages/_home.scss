@@ -1,50 +1,47 @@
-/** HEADER **/
-.location-form {
-    display: flex;
+/** LOCATION **/
+.location {
+    @include flex-center;
     flex-direction: row;
-    justify-content: center;
-    background-color: lightgrey;
-    height: 40px;
-}
-
-.location-icon {
-    display: flex;
-    width: 40px;
-    justify-content: center;
     align-items: center;
-}
-
-#location-search {
-    border: none;
-    width: 45%;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: lightgrey;
+    background-color: $location-color;
+    height: 40px;
+    &__icon {
+        @include flex-center;
+        width: 40px;
+    }
+    &__search {
+        border: none;
+        width: 45%;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: $location-color;
+    }
 }
 
 .fa-location-dot {
     padding-bottom: 5px;
 }
 
-/** TITRE **/
-.explore-menu {
+/** EXPLORE **/
+.explore {
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
+    margin-bottom: 40px;
+    height: 250px;
+    background-color: $background-color;
+    align-items: center;
+    &__title {
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    &__subtitle {
+        display: flex;
+        text-align: center; 
+        padding-left: 15px;
+    }
+    
 }
 
-h1 {
-    font-weight: 900;
-    font-size: 26px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    display: flex;
-    text-align: center;
-    padding-left: 5px;
-}

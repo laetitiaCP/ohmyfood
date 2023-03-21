@@ -1,0 +1,47 @@
+.functionning {
+    margin: 20px;
+
+    &__liste {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    &__element {
+        margin-bottom: 15px;
+        display: flex;
+        height: 70px;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 20px;
+        background-color: $background-color;
+        @include list-shaddow;  
+        &:hover {
+            background-color: $primary-color-light;
+            i {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__number {
+        position: relative;
+        text-align: center;
+        font-size: 0.8em;
+        color: white;
+        background-color: $primary-color;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        line-height: 1.5;
+        left: -10px;
+    }
+    &__title {
+        font-weight: bold;
+    }
+}
+
+.fa-solid {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+

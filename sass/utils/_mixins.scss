@@ -1,0 +1,20 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin linear-gradient ($degree, $color1, $color2) {
+    background: linear-gradient($degree, $color1, $color2);
+}
+
+@mixin header-shadow {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@mixin btn-shadow {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+@mixin list-shaddow {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
