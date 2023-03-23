@@ -7,3 +7,12 @@
     @include linear-gradient (180deg, $secondary-color, $primary-color);
     @include btn-shadow;
 }
+
+.btn-heart {
+    @include button-heart (white);
+}
+
+.btn-heart-menus {
+    @include button-heart ($background-color);
+    display: inline-grid;
+}

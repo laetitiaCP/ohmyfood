@@ -18,3 +18,18 @@
 @mixin list-shaddow {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
+
+@mixin header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include header-shadow;
+}
+
+@mixin button-heart ($color) {
+    border: none;
+    background: $color;
+    padding: 15px;
+    margin-right: 5px;
+}

@@ -1,7 +1,15 @@
-header {
-    width: 100%;
-    position: relative;
-    display: flex;
+.main-header {
+    @include header;
     justify-content: center;
-    @include header-shadow;
+}
+
+.menu-header {
+    @include header;
+    justify-content: flex-start;
+    a {
+        width: 25%;
+        i {
+            color: black;
+        }
+    }
 }
