@@ -1,18 +1,32 @@
 .dish-card {
+    display: flex;
     margin-bottom: 20px;
     padding: 20px;
     background-color: white;
     border-radius: 15px;
     @include list-shaddow;
+    
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        flex: 1;
+        white-space: nowrap;
+    }
     &__title {
         margin: 0;
     }
-    &__txt {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
-        & span {
-            text-overflow: "...";
-        }
+    &__info {
+        margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: lighter;
+        font-size: 14px;
     }
+    & span {
+        font-weight: bold;
+        align-self: flex-end;
+        margin-left: 5px;
+    }    
 }
