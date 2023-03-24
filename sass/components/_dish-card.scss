@@ -5,15 +5,12 @@
     background-color: white;
     border-radius: 15px;
     @include list-shaddow;
-    
-    &__txt {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        overflow: hidden;
-        flex: 1;
-        white-space: nowrap;
-    }
+    animation: dishes-appear 1s both;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    flex: 1;
+    white-space: nowrap;
     &__title {
         margin: 0;
     }
@@ -30,3 +27,11 @@
         margin-left: 5px;
     }    
 }
+
+@for $i from 0 through 8 {
+    .card-#{$i} {
+        animation-delay: $i * 100ms;
+    }
+}
+
+
