@@ -32,17 +32,22 @@
 }
 
 .btn-heart {
-    @include button-heart (white);
-    i {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    margin-right: 20px;
+    
+    & i {
+        line-height: 1;
         &:hover {
-                color:red;
-                animation: progress-heart 1s ease-in-out; 
-            
+            font-weight: 700;
+            background-image: $color-full-heart;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            -moz-background-clip: text;
+            animation: progress-heart 500ms ease-in-out;
         }
     }
-}
-
-.btn-heart-menus {
-    @include button-heart ($background-color);
-    display: inline-grid;
 }
