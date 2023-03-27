@@ -1,6 +1,11 @@
 /** MAIN **/
 .main {
     position: relative;
+    @include large-desktop-only {
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /** LOCATION **/
@@ -16,7 +21,7 @@
     }
     &__search {
         border: none;
-        width: 45%;
+        width: 150px;
         font-size: 16px;
         font-weight: bold;
         background-color: $location-color;
