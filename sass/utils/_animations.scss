@@ -75,4 +75,25 @@
 		transform: scale(1);
 	}
 }
-  
+
+@keyframes dishes-order {
+    0%{
+        transform: translateX(0);
+        width: 0px;
+    }
+    25%{
+        transform: translateX(0.25);
+        width: 18.75px;
+    }
+    50%{
+        transform: translateX(0.5);
+    }
+    80%{
+        transform: translateX(0.8);
+        width: 60px;
+    }
+    100%{
+        transform: translateX(1);
+        
+    }
+}

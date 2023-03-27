@@ -1,10 +1,11 @@
 .btn-go {
     display: inline-block;
     position: relative;
+    align-items: center;
     color: white;
     border: none;
     border-radius: 20px;
-    width: 50%;
+    width: 200px;
     height: 40px;
     @include linear-gradient (180deg, $secondary-color, $primary-color);
     @include btn-shadow;

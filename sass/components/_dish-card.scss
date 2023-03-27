@@ -1,18 +1,34 @@
 .dish-card {
     display: flex;
     margin-bottom: 20px;
-    padding: 20px;
     background-color: white;
     border-radius: 15px;
     @include list-shaddow;
     animation: dishes-appear 1s both;
-    flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
     flex: 1;
     white-space: nowrap;
+    &:hover {
+        & .dish-card__order {
+            display: flex;
+            opacity: 1;
+            align-items: center;
+            position: relative;
+            animation: dishes-order 250ms ease-in-out both;
+            & i {
+                transform: rotate(360deg);
+            }
+        }
+    }
+    &__txt {
+        margin: 20px;
+        overflow: hidden;
+    }
     &__title {
         margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &__info {
         margin: 0;
@@ -21,11 +37,28 @@
         font-weight: lighter;
         font-size: 14px;
     }
+    &__price {
+        display: flex;
+        align-self: center;
+        height: 75px;
+    }
     & span {
         font-weight: bold;
-        align-self: flex-end;
-        margin-left: 5px;
+        padding: 20px;
+        align-self: end;
     }    
+    &__order {
+        position: absolute;
+        opacity: 0;
+        right: 0;
+        background: $tertiary-color;
+        & i {
+            margin-left: 25px;
+            color: white;
+            transform: rotate(0deg);
+            transition: transform 500ms ease;
+        }
+    }
 }
 
 @for $i from 0 through 8 {
