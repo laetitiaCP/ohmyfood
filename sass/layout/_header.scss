@@ -5,9 +5,10 @@
 
 .menu-header {
     @include header;
-    justify-content: flex-start;
+    justify-content: center;
     a {
-        width: 25%;
+        position: absolute;
+        left: 0;
         i {
             color: black;
         }

@@ -1,11 +1,6 @@
 /** MAIN **/
 .main {
     position: relative;
-    @include large-desktop-only {
-        width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 /** LOCATION **/

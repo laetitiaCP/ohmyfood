@@ -2,9 +2,15 @@
     padding-bottom: 40px;
 }
 
+.menus {
+    @include desktop-only {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .menu {
     background-color: $background-color;
-
     & img {
         object-fit: cover;
         position: relative;
@@ -19,9 +25,18 @@
         z-index: 2;
         margin-top: -65px;
         background: $background-color;
+        @include desktop-only {
+            margin-top: 0;
+        }
         & button {
             display: inline-grid;
             margin: 0;
+            @include desktop-only {
+                display: flex;
+                margin-right: auto;
+                margin-left: auto;
+                justify-content: center;
+            }
         }
     }
     &__title {
@@ -29,11 +44,18 @@
         font-family: $head-font;
         margin: 0;
         padding: 20px;
+        @include desktop-only {
+            display: flex;
+            justify-content: center;
+        }
     }
     &__dish{
         display: flex;
         flex-direction: column;
         padding: 0px 20px 20px 20px;
+        @include desktop-only {
+           width: 400px;
+        }
     }
     &__subtitle {
         text-transform: uppercase;
