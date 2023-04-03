@@ -15,6 +15,8 @@
             opacity: 1;
             align-items: center;
             position: relative;
+            margin-top: -1px;
+            margin-bottom: -1px;
             animation: dishes-order 250ms ease-in-out both;
             & i {
                 transform: rotate(360deg);

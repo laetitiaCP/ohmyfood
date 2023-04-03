@@ -78,22 +78,18 @@
 
 @keyframes dishes-order {
     0%{
-        transform: translateX(0);
         width: 0px;
     }
     25%{
-        transform: translateX(0.25);
         width: 18.75px;
     }
     50%{
-        transform: translateX(0.5);
+        width: 30px;
     }
     80%{
-        transform: translateX(0.8);
-        width: 60px;
+        width: 48px;
     }
     100%{
-        transform: translateX(1);
-        
+        width: 60px; 
     }
 }

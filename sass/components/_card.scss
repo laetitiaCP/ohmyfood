@@ -12,6 +12,7 @@
         }
     }
     &__card {
+        position: relative;
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
@@ -35,6 +36,14 @@
             font-size: 0.8em;
             margin: 0;
         }
+        &__new {
+            position: absolute;
+            background: $tertiary-color;
+            color: $font-color-new;
+            padding: 5px;
+            top: 10px;
+            right: 10px;          
+        }
     }
 
     & img {
@@ -44,9 +53,5 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 10px 10px 0 0;
-    }
-
-    .fa-heart {
-
     }
 }

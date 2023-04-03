@@ -7,6 +7,7 @@ $primary-color: #9356DC;
 $primary-color-light: lighten($primary-color, 35%);
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+$font-color-new:darken($tertiary-color,40%);
 $location-color: lighten(lightgrey, 10%);
 $background-color: lighten(lightgrey, 15%);
 $background-footer: #353535;
