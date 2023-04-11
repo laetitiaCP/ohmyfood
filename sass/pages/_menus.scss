@@ -25,11 +25,13 @@
             margin-top: 0;
         }
         & button {
-            display: flex;
-            justify-content: center;
-            margin-right: auto;
-            margin-left: auto;
-            margin-bottom: 40px;
+            @include desktop-only {
+                display: flex;
+                justify-content: center;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 40px;
+            }  
         }
     }
     &__title {
@@ -47,7 +49,7 @@
         flex-direction: column;
         padding: 0px 20px 20px 20px;
         @include desktop-only {
-           width: 400px;
+           width: 30%;
         }
     }
     &__subtitle {
